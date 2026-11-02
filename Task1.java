@@ -23,7 +23,6 @@ import java.util.regex.Pattern;
  */
 public class Task1 {
 
-    // Ціле число: лише цифри
     private static final Pattern INTEGER = Pattern.compile("\\d+");
 
     private static final Pattern DECIMAL =
@@ -34,10 +33,9 @@ public class Task1 {
         IOHelper.println();
 
         try {
-            //Вхідний файл (повторний запит, поки файл не знайдено)
+
             File input = IOHelper.askExistingFile("Введіть шлях до вхідного файлу: ");
 
-            //Послідовне читання всіх рядків у контейнер ArrayList
             List<String> lines = readLines(input);
 
             //Розбір рядків
